@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   root "splash_screen#index"
-  resources :home_page, only: [:index, :new, :show]
+  resources :home_pages, only: [:index, :new, :show]
 end
