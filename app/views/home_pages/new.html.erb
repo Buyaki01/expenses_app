@@ -1,0 +1,9 @@
+<div>
+  <h3 class='m-3'> Add a new category </h3>
+  <%= form_with url: home_pages_path, scope: :home_page do |form| %>
+    <%= form.text_field :name, placeholder: 'Please enter the name of your category', require: true %>
+    <%= form.text_field :icon, placeholder: 'Please enter an icon that suits your category', require: true %>
+    
+    <%= form.submit "Submit" %>
+  <% end %>
+</div>
