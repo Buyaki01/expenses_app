@@ -17,6 +17,8 @@ gem 'puma', '~> 5.0'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'devise'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
 
