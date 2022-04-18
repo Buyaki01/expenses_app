@@ -1,10 +1,18 @@
 <div>
   <div>
-    <button>
-      <%= link_to 'Sign Up', new_user_registration_path %>
-    </button>
-    <button>
-      <%= link_to 'Log In', new_user_session_path %>
-    </button>  
+    <div class="m-3 d-flex justify-content-center">
+      <i class="fa fa-briefcase" style="font-size:48px"></i> 
+      <h3> Expenses App </h3>
+    </div>
+    <div class="m-3 d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" >
+        <%= link_to 'Sign Up', new_user_registration_path, class: "text-white text-decoration-none w-50" %>
+      </button>
+    </div>
+    <div class="m-3 d-flex justify-content-center">
+      <button type="button" class="btn btn-primary">
+        <%= link_to 'Log In', new_user_session_path, class: "text-white text-decoration-none w-50" %>
+      </button> 
+    </div> 
   </div>
 </div>
