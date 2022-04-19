@@ -1,9 +1,15 @@
-<div>
-  <h3 class='m-3'> Add a new category </h3>
+<h3 class='d-flex justify-content-center'> Add a new category </h3>
+<div class="d-flex justify-content-center">
   <%= form_with url: home_pages_path, scope: :home_page do |form| %>
-    <%= form.text_field :name, placeholder: 'Please enter the name of your category', require: true %>
-    <%= form.file_field :icon, require: true %>
-    
-    <%= form.submit "Submit" %>
+    <div class="mb-3">
+      <%= form.text_field :name, placeholder: 'Please enter the name of your category', require: true %>
+    </div>
+    <div class="mb-3"> 
+      <%= form.file_field :icon, require: true %>
+    </div>
+    <%= form.submit "Submit", type: "button", class: "btn btn-primary" %> 
+    <button type="button", class="btn btn-primary">
+      <%=link_to 'Back', home_pages_path, class: "text-white text-decoration-none" %>
+    </button> 
   <% end %>
 </div>

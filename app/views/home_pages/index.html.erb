@@ -2,7 +2,7 @@
 <% @home_pages.each do |category| %>
   <div class="m-5 shadow p-3 mb-5 bg-light rounded">
     <% if category.icon.attached? %>
-     <img src="<%=(url_for(category.icon))%>", class: "iconImage" >
+     <img src="<%=(url_for(category.icon))%>" >
     <% end %>
     <%= category.name %> 
     <p class="m-3 d-flex justify-content-end"> Total Amount: $60 </p>
@@ -10,6 +10,6 @@
 <% end %>
 <div class="d-flex justify-content-center">
    <button type="button" class="btn btn-primary"> 
-     <%=link_to 'Add a new category', new_home_page_path, class: "text-white text-decoration-none" %> 
+     <%=link_to 'Add a new category', new_home_page_path, class: "text-white text-decoration-none" %>
     </button>
 </div>
