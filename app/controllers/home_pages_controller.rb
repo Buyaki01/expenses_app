@@ -1,5 +1,7 @@
 class HomePagesController < ApplicationController
-  def index; end
+  def index
+    @home_pages = HomePage.all
+  end
 
   def new
     @home_page = HomePage.new
