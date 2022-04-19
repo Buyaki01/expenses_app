@@ -1,6 +1,6 @@
 <h3 class="d-flex justify-content-center"> Categories </h3>
 <% @home_pages.each do |category| %>
-  <%= link_to home_page_expenses(recipe.id), class: "each-recipe-link" do %>
+  <%= link_to home_page_expenses_path do %>
     <div class="m-5 shadow p-3 mb-5 bg-light rounded">
       <% if category.icon.attached? %>
       <img src="<%=(url_for(category.icon))%>" >
