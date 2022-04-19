@@ -1,12 +1,14 @@
 <h3 class="d-flex justify-content-center"> Categories </h3>
 <% @home_pages.each do |category| %>
-  <div class="m-5 shadow p-3 mb-5 bg-light rounded">
-    <% if category.icon.attached? %>
-     <img src="<%=(url_for(category.icon))%>" >
-    <% end %>
-    <%= category.name %> 
-    <p class="m-3 d-flex justify-content-end"> Total Amount: $60 </p>
-  </div>
+  <%= link_to home_page_expenses(recipe.id), class: "each-recipe-link" do %>
+    <div class="m-5 shadow p-3 mb-5 bg-light rounded">
+      <% if category.icon.attached? %>
+      <img src="<%=(url_for(category.icon))%>" >
+      <% end %>
+      <%= category.name %> 
+      <p class="m-3 d-flex justify-content-end"> Total Amount: $60 </p>
+    </div>
+  <% end %> 
 <% end %>
 <div class="d-flex justify-content-center">
    <button type="button" class="btn btn-primary"> 

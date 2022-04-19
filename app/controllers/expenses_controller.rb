@@ -10,9 +10,9 @@ class ExpensesController < ApplicationController
   def create
     @new_expense = current_user.expenses.new(expense_params)
     if @new_expense.save!
-      redirect_to home_page_expenses_path, flash: { alert: 'Your category is saved' }
+      redirect_to home_page_expenses_path, flash: { alert: 'Your expense is saved' }
     else
-      redirect_to new_home_page_expense_path, flash: { alert: 'Could not save your category' }
+      redirect_to new_home_page_expense_path, flash: { alert: 'Could not save your expense' }
     end
   end
 
