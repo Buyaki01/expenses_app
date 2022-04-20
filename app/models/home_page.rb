@@ -6,4 +6,5 @@ class HomePage < ApplicationRecord
   has_one_attached :icon
 
   validates :name, presence: true, length: { in: 1..20 }
+  validates :icon, presence: true
 end
