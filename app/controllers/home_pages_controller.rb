@@ -1,6 +1,15 @@
 class HomePagesController < ApplicationController
   def index
-    @home_pages = HomePage.all
+    @home_pages = current_user.home_pages.order(created_at: :desc).all
+    @total_amount = []
+
+    @home_pages.each do |category|
+      total = 0
+      category.expenses_categories.each do |expense_category|
+        total += expense_category.expense.amount
+      end
+      @total_amount.push(total)
+    end
   end
 
   def new
