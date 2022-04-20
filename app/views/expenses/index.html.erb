@@ -14,11 +14,13 @@
   </div>
 
   <div class="m-5 shadow p-3 mb-5 bg-light rounded">
-    <h5> Fuel </h5>
-    <p class="d-flex justify-content-end"> $17.00 </p>
-    <div class="border-top">
-      <p> 12 Apr 2014</p>
-    </div>
+    <% @expenses.each do |expense| %>
+      <h5> <%= expense.name %> </h5>
+      <p class="d-flex justify-content-end"> $ <%= expense.amount %> </p>
+      <div class="border-top">
+        <p> <%= expense.created_at.strftime('%d %h %Y') %> </p>
+      </div>
+    <% end %>
   </div>
 </div>
 <div class="d-flex justify-content-center">
