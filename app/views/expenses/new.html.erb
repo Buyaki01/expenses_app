@@ -7,9 +7,9 @@
     <div class="mb-3"> 
       <%= form.number_field :amount, placeholder: 'Please enter the amount that you spent on this expense', require: true %>
     </div>
-    <%= form.submit "Submit", type: "button", class: "btn btn-primary" %> 
+    <%= form.submit "Submit", class: "btn btn-primary" %> 
     <button type="button", class="btn btn-primary">
-      <%=link_to 'Back', home_page_expenses_path, class: "text-white text-decoration-none" %>
+      <%=link_to 'Back', home_page_expenses_path(@home_page_id), class: "text-white text-decoration-none" %>
     </button> 
   <% end %>
 </div>
