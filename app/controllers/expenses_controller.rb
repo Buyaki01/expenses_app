@@ -1,6 +1,7 @@
 class ExpensesController < ApplicationController
   def index
     @expenses = Expense.all
+    @category_details = HomePage.find(params[:home_page_id])
   end
 
   def new
