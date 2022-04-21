@@ -44,6 +44,31 @@
 }
 
 /** Styling the home_pages page **/
+.home-pages-heading {
+  /* border: 1px solid black; */
+  background-color: #0057ff;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  box-shadow: 5px 10px rgb(240, 240, 240);
+}
+
+.fa-search,
+.fa-bars,
+.home-pages-title {
+  padding: 20px;
+}
+
+/* .home-pages-title{
+  display: flex;
+  justify-content: center;
+}
+
+.search-icon{
+  display: flex;
+  justify-content: end;
+} */
 img {
   width: 20%;
   height: 20%;

@@ -1,4 +1,8 @@
-<h3 class="d-flex justify-content-center"> Categories </h3>
+<div class="home-pages-heading">
+  <i class="fa fa-bars" style="font-size:36px"></i>
+  <h4 class="home-pages-title"> Categories </h4>
+  <i class="fa fa-search" style="font-size:36px"></i>
+</div>
 <% @home_pages.each_with_index do |category, index| %>
   <%= link_to home_page_expenses_path(category.id) do %>
     <div class="m-5 shadow p-3 mb-5 bg-light rounded">
