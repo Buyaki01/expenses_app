@@ -13,6 +13,15 @@
  *= require_tree .
  *= require_self
  */
+*{
+  font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.splash-screen-title{
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  font-size: 12px;
+}
 
 img{
   width: 20%;

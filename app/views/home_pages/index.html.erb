@@ -6,7 +6,7 @@
       <img src="<%=(url_for(category.icon))%>" >
       <% end %>
       <%= category.name %> 
-      <p class="m-3 d-flex justify-content-end"> $<%= @total_amount[index] %> </p>
+      <p class="m-3 d-flex justify-content-end"> $<%# @total_amount[index] %> </p>
     </div>
   <% end %> 
 <% end %>
