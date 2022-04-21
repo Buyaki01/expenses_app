@@ -45,7 +45,6 @@
 
 /** Styling the home_pages page **/
 .home-pages-heading {
-  /* border: 1px solid black; */
   background-color: #0057ff;
   display: flex;
   justify-content: space-between;
@@ -60,17 +59,23 @@
   padding: 20px;
 }
 
-/* .home-pages-title{
-  display: flex;
-  justify-content: center;
-}
-
-.search-icon{
-  display: flex;
-  justify-content: end;
-} */
 img {
   width: 20%;
   height: 20%;
   border-radius: 8px;
+}
+
+/* styling expenses page */
+.expenses-page-heading {
+  background-color: #0057ff;
+  color: white;
+}
+
+.expenses-page-heading1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-body {
+  margin-bottom: 50px;
 }
