@@ -4,11 +4,14 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  root "home_pages#index"
-  
-  get 'splash_screen/index'
+
+  authenticated :user do
+    root to: "home_pages#index", as: :authenticated_root
+  end
 
   resources :home_pages, only: [:index, :new, :create] do 
     resources :expenses, only: [:index, :new, :create]
   end
+
+  root "splash_screen#index"
 end
