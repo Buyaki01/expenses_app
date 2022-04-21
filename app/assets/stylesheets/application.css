@@ -79,3 +79,7 @@ img {
 .expense-body {
   margin-bottom: 50px;
 }
+
+.expense-form-btn {
+  margin-left: 15px;
+}

@@ -2,14 +2,16 @@
 <div class="d-flex justify-content-center">
   <%= form_with url: home_page_expenses_path, scope: :expense do |form| %>
     <div class="mb-3">
-      <%= form.text_field :name, placeholder: 'Please enter the name of your expense', require: true %>
+      <%= form.text_field :name, placeholder: 'Please enter the name of your expense', require: true, class: "sign-up-field shadow p-2 bg-light rounded" %>
     </div>
     <div class="mb-3"> 
-      <%= form.number_field :amount, placeholder: 'Please enter the amount that you spent on this expense', require: true %>
+      <%= form.number_field :amount, placeholder: 'Please enter the amount that you spent', require: true, class: "sign-up-field shadow p-2 bg-light rounded" %>
     </div>
-    <%= form.submit "Submit", class: "btn btn-primary" %> 
-    <button type="button", class="btn btn-primary">
-      <%=link_to 'Back', home_page_expenses_path(@home_page_id), class: "text-white text-decoration-none" %>
-    </button> 
+    <div class="d-flex justify-content-center">
+      <%= form.submit "Submit", class: "btn btn-primary" %> 
+      <button type="button", class="btn btn-primary expense-form-btn">
+        <%=link_to 'Back', home_page_expenses_path(@home_page_id), class: "text-white text-decoration-none" %>
+      </button> 
+    </div>
   <% end %>
 </div>
