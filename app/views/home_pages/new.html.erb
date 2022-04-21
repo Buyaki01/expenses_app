@@ -2,14 +2,16 @@
 <div class="d-flex justify-content-center">
   <%= form_with url: home_pages_path, scope: :home_page do |form| %>
     <div class="mb-3">
-      <%= form.text_field :name, placeholder: 'Please enter the name of your category', require: true %>
+      <%= form.text_field :name, placeholder: 'Please enter the name of your category', require: true, class: "sign-up-field shadow p-2 bg-light rounded" %>
     </div>
     <div class="mb-3"> 
-      <%= form.file_field :icon, require: true %>
+      <%= form.file_field :icon, require: true, class: "sign-up-field shadow p-2 bg-light rounded" %>
     </div>
-    <%= form.submit "Submit", class: "btn btn-primary" %> 
-    <button type="button", class="btn btn-primary">
-      <%=link_to 'Back', home_pages_path, class: "text-white text-decoration-none" %>
-    </button> 
+    <div class="d-flex justify-content-center"> 
+      <%= form.submit "Submit", class: "btn btn-primary" %> 
+      <button type="button", class="btn btn-primary expense-form-btn">
+        <%=link_to 'Back', home_pages_path, class: "text-white text-decoration-none" %>
+      </button> 
+    </div>
   <% end %>
 </div>
