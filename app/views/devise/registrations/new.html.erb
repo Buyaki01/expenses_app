@@ -1,6 +1,6 @@
 <h2 class="d-flex justify-content-center">Sign up</h2>
 
-<div class="m-3 d-flex justify-content-center">
+<div class="m-3 d-flex flex-column align-items-center">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
   
@@ -32,5 +32,5 @@
   </div>
 <% end %>
 
-<%# render "devise/shared/links" %>
+<%= render "devise/shared/links" %>
 </div>
