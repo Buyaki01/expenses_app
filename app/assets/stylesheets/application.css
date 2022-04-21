@@ -13,17 +13,32 @@
  *= require_tree .
  *= require_self
  */
-*{
+* {
   font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.splash-screen-title{
+.splash-screen-heading {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.splash-screen-title {
   font-weight: 400;
   color: rgb(25, 25, 25);
-  font-size: 12px;
 }
 
-img{
+.splash-screen-btn,
+.splash-screen-msg {
+  display: flex;
+  justify-content: center;
+}
+
+img {
   width: 20%;
   height: 20%;
   border-radius: 8px;

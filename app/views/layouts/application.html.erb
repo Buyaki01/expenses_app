@@ -18,7 +18,7 @@
 
     <%= yield %>
 
-    <div class="session-msg"> 
+    <div class="session-msg m-3 splash-screen-msg"> 
       <% if user_signed_in? %> 
         Signed in as <%= current_user.name %>. This cannot be cheese?&nbsp; <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "sign-out-btn" %> 
       <% else %> 

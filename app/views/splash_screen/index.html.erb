@@ -1,17 +1,17 @@
-<div>
+<div class="splash-screen-container border">
   <div>
-    <div class="m-3 d-flex justify-content-center">
+    <div class="splash-screen-heading">
       <h3 class="splash-screen-title"> Expenses App </h3>
     </div>
-    <div class="m-3 d-flex justify-content-center">
-      <button type="button" class="btn btn-primary" >
-        <%= link_to 'Sign Up', new_user_registration_path, class: "text-white text-decoration-none w-50" %>
+    <div class="splash-screen-btn row m-3">
+      <button type="button" class="btn btn-primary w-50" >
+        <%= link_to 'Sign Up', new_user_registration_path, class: "text-white text-decoration-none" %>
       </button>
     </div>
-    <div class="m-3 d-flex justify-content-center">
-      <button type="button" class="btn btn-primary">
-        <%= link_to 'Log In', new_user_session_path, class: "text-white text-decoration-none w-50" %>
-      </button> 
+    <div class="splash-screen-btn row m-3">
+      <button type="button" class="btn btn-primary w-50">
+        <%= link_to 'Log In', new_user_session_path, class: "text-white text-decoration-none" %>
+       </button>  
     </div> 
   </div>
 </div>
