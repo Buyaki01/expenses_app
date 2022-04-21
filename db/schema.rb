@@ -52,12 +52,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_19_145104) do
   end
 
   create_table "expenses_categories", force: :cascade do |t|
-    t.bigint "expenses_id", null: false
-    t.bigint "home_pages_id", null: false
+    t.bigint "expense_id", null: false
+    t.bigint "home_page_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["expenses_id"], name: "index_expenses_categories_on_expenses_id"
-    t.index ["home_pages_id"], name: "index_expenses_categories_on_home_pages_id"
+    t.index ["expense_id"], name: "index_expenses_categories_on_expense_id"
+    t.index ["home_page_id"], name: "index_expenses_categories_on_home_page_id"
   end
 
   create_table "home_pages", force: :cascade do |t|
@@ -84,7 +84,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_19_145104) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "expenses", "users", column: "author_id"
-  add_foreign_key "expenses_categories", "expenses", column: "expenses_id"
-  add_foreign_key "expenses_categories", "home_pages", column: "home_pages_id"
+  add_foreign_key "expenses_categories", "expenses"
+  add_foreign_key "expenses_categories", "home_pages"
   add_foreign_key "home_pages", "users"
 end
