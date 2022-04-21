@@ -38,6 +38,12 @@
   justify-content: center;
 }
 
+/** Styling the sign up page **/
+.sign-up-field {
+  width: 400px;
+}
+
+/** Styling the home_pages page **/
 img {
   width: 20%;
   height: 20%;
