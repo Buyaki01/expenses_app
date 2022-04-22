@@ -3,15 +3,11 @@
     <div class="splash-screen-heading">
       <h3 class="splash-screen-title"> Expenses App </h3>
     </div>
-    <div class="splash-screen-btn row m-3">
-      <button type="button" class="btn btn-primary w-50" >
-        <%= link_to 'Sign Up', new_user_registration_path, class: "text-white text-decoration-none" %>
-      </button>
-    </div>
-    <div class="splash-screen-btn row m-3">
-      <button type="button" class="btn btn-primary w-50">
-        <%= link_to 'Log In', new_user_session_path, class: "text-white text-decoration-none" %>
-       </button>  
+    <div class="splash-screen-btn row mb-3"> 
+      <%= link_to 'Log In', new_user_session_path, class: "btn btn-primary w-50 text-white text-decoration-none" %>
     </div> 
+    <div class="splash-screen-btn row mb-5">
+      <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-outline-primary w-50 text-grey text-decoration-none" %>
+    </div>
   </div>
 </div>

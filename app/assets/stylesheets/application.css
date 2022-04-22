@@ -28,7 +28,8 @@
 }
 
 .splash-screen-title {
-  font-weight: 400;
+  font-weight: bold;
+  letter-spacing: 2px;
   color: rgb(25, 25, 25);
 }
 

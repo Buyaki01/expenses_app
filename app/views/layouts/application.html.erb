@@ -15,15 +15,6 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
     <%= yield %>
-
-    <div class="session-msg m-3 splash-screen-msg"> 
-      <% if user_signed_in? %> 
-        Signed in as <%= current_user.name %>. This cannot be cheese?&nbsp; <%= link_to "Sign out", destroy_user_session_path, :method => :delete, class: "sign-out-btn" %> 
-      <% else %> 
-        <%= link_to 'Register', new_user_registration_path, class: "sign-out-btn" %> &nbsp;or&nbsp; <%= link_to 'Sign in', new_user_session_path, class: "sign-out-btn"%> 
-      <% end %> 
-    </div> 
   </body>
 </html>
