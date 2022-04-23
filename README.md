@@ -10,7 +10,7 @@ Expenses app allows users to keep track of their expenses.
 - Tailwind
 
 ## Live Demo
-[Live Demo](https://agile-peak-24884.herokuapp.com/)
+[Live Video]()
 
 ### Run instructions 
 - Clone the GitHub repo and type the following commands in the terminal to run the following commands 
@@ -44,7 +44,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse Team for facilitating project requirements and resources
+- Gregoire Vella on Behance for the [design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
 
 ## 📝 License
 
