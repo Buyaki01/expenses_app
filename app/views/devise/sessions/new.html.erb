@@ -1,8 +1,9 @@
 <div class="bg-blue-500 py-3 w-full text-center">
   <h2 class="text-white text-xl uppercase">Log in</h2>
 </div>
-
-
+<div class="my-4 text-center">
+  <%= render 'shared/notice' %>
+</div>
 <div class="m-3 pt-24 d-flex flex-column align-items-center">  
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field mt-3">
