@@ -3,6 +3,11 @@
   <h4 class="text-white text-2xl"> Expense Categories </h4>
   <i class="fa fa-search text-white text-2xl"></i>
 </div>
+
+<div class="my-4 text-center">
+  <%= render 'shared/notice' %>
+</div>
+
 <% @home_pages.each_with_index do |category, index| %>
   <div class="md:container md:mx-auto md:mb-5">
     <%= link_to home_page_expenses_path(category.id) do %>
