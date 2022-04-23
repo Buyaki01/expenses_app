@@ -1,0 +1,28 @@
+<div class="bg-blue-500 py-3 w-full text-center">
+  <h2 class="text-white text-xl uppercase">Add Expense Breakdown</h2>
+</div>
+
+<div class="my-4 text-center">
+  <%= render 'shared/notice' %>
+</div>
+
+<div class="md:container md:mx-auto md:flex md:justify-center">
+  <div class="md:w-3/5 mx-3">
+    <%= form_with url: home_page_expenses_path, scope: :expense do |form| %>
+      <div class="mb-3">
+        <%= form.text_field :name, placeholder: 'Please enter the name of your expense', require: true, class: "py-2 px-3 border w-full rounded-md" %>
+      </div>
+      <div class="mb-3"> 
+        <%= form.number_field :amount, placeholder: 'Please enter the amount that you spent', require: true, class: "py-2 px-3 border w-full rounded-md" %>
+      </div>
+      <div class="mb-3">
+        <%= form.label :category, class:"form-label" %><br>
+        <%= form.select :home_page_id, current_user.home_pages.collect {|category| [category.name, category.id]},{ include_blank: true} , class:"form-select" %><br>
+      </div>
+      <div class="mx-2 mt-3 flex items-center justify-between">
+        <%= form.submit "Submit", class: "py-2 border bg-blue-500 text-white px-5" %> 
+        <%=link_to 'Back', home_page_expenses_path(@home_page_id), class: "py-2 px-5 bg-blue-400 text-white" %>
+      </div>
+    <% end %>
+  </div>
+</div>
