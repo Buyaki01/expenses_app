@@ -13,11 +13,12 @@
  *= require_tree .
  *= require_self
  */
-* {
+body {
   font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f2f2f2 !important;
 }
 
 .splash-screen-heading {
@@ -38,11 +39,6 @@
   display: flex;
   justify-content: center;
 }
-
-/** Styling the sign up page **/
-/* .sign-up-field {
-  width: 350px;
-} */
 
 /** Styling the home_pages page **/
 .home-pages-heading {
