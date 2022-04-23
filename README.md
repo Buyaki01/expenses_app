@@ -9,6 +9,9 @@ Expenses app allows users to keep track of their expenses.
 - Bootstrap
 - Tailwind
 
+## Live Demo
+[Live Demo](https://agile-peak-24884.herokuapp.com/)
+
 ### Run instructions 
 - Clone the GitHub repo and type the following commands in the terminal to run the following commands 
     ```
