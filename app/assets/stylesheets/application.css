@@ -41,7 +41,8 @@ body {
 }
 
 /** Styling the home_pages page **/
-.home-pages-heading {
+
+/* .home-pages-heading {
   background-color: #0057ff;
   display: flex;
   justify-content: space-between;
@@ -60,7 +61,7 @@ img {
   width: 20%;
   height: 20%;
   border-radius: 8px;
-}
+} */
 
 /* styling expenses page */
 .expenses-page-heading {
