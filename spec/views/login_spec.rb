@@ -27,7 +27,6 @@ RSpec.describe 'Login User', type: :system do
       expect(page).to have_content('')
     end
     it 'incorrect email and password' do
-      visit user_session_path
       fill_in 'Email', with: 'king@example.com'
       fill_in 'Password', with: '123'
       click_button 'Log in'
