@@ -10,7 +10,7 @@ Expenses app allows users to keep track of their expenses.
 - Tailwind
 
 ## Live Link
-[Live Link](savannah-51239.herokuapp.com/home_pages/1/expenses)
+[Live Link](https://limitless-savannah-51239.herokuapp.com/)
 
 ## Live Demo
 [Live Video](https://www.loom.com/share/48688ea19cd34cb5847dba03cd0f38a4)
