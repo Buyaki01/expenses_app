@@ -19,6 +19,8 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'devise'
 
+gem 'rspec-rails'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem 'importmap-rails'
 
@@ -55,8 +57,6 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-
-  gem 'rspec-rails'
 end
 
 group :development do
