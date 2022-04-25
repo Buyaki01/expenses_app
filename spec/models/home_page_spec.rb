@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe HomePage, type: :model do
   user = User.create(name: 'Ritta', email: 'ritta@example.com', password: '123456')
-  subject { HomePage.new(user_id: user, name: 'Food') }
+  subject { HomePage.new(author_id: user, name: 'Food') }
 
   before { subject.save }
 
