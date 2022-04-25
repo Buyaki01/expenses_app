@@ -10,7 +10,7 @@ Expenses app allows users to keep track of their expenses.
 - Tailwind
 
 ## Live Demo
-[Live Video]()
+[Live Video](https://www.loom.com/share/48688ea19cd34cb5847dba03cd0f38a4)
 
 ### Run instructions 
 - Clone the GitHub repo and type the following commands in the terminal to run the following commands 
