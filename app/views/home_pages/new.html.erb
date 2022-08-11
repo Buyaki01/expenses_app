@@ -1,0 +1,22 @@
+<div class="bg-blue-500 py-3 w-full text-center">
+  <h2 class="text-white text-xl uppercase">Add expense category</h2>
+</div>
+<div class="my-4 text-center">
+  <%= render 'shared/notice' %>
+</div>
+<div class="md:container md:mx-auto md:flex md:justify-center">  
+  <div class="md:w-3/5">
+    <%= form_with url: home_pages_path, scope: :home_page do |form| %>
+      <div class="mx-3">
+        <%= form.text_field :name, placeholder: 'Category name', require: true, class: 'py-2 px-3 border w-full rounded-md' %>
+      </div>
+      <div class="mt-3 mx-3">
+        <%= form.file_field :icon, require: true, class: 'bg-white py-2 px-3 border w-full rounded-md' %>
+      </div>
+      <div class="mx-3 mt-3 flex items-center justify-between">
+        <%= form.submit "Submit", class: 'py-2 border bg-green-500 text-white px-5' %> 
+        <%= link_to 'Back', home_pages_path, class: 'py-2 px-5 bg-green-500 text-white' %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="py-4 bg-blue-500 px-8">
+  <div class="flex justify-between ">
+    <i class="fa fa-bars text-white text-2xl"></i>
+    <h4 class="text-white text-2xl"> Expense Breakdown </h4>
+    <i class="fa fa-search text-white text-2xl"></i>
+  </div>
+  <div class="flex justify-center">
+    <ul class="flex mt-3">
+      <li class="mx-3 text-gray-200"> Most Recent</li>
+      <li class="mx-3 text-gray-200"> Most Ancient</li>
+    </ul>
+  </div>
+</div>
+
+<div class="my-4 text-center">
+  <%= render 'shared/notice' %>
+</div>
+
+<div class="shadow p-3 mb-2 bg-light rounded">
+  <h4> <%= @category_details.name %> </h4>
+  <h6 class="d-flex justify-content-end"> $ <%= @total_amount %> </h6>
+</div>
+
+<div class="expense-body">
+  <% @expenses.each do |expense| %>
+    <div class="m-3 shadow p-3 mb-5 bg-light rounded">
+      <h5> <%= expense.name %> </h5>
+      <p class="d-flex justify-content-end"> $ <%= expense.amount %> </p>
+      <div class="border-top">
+        <p class="mt-2"> <%= expense.created_at.strftime('%d %h %Y') %> </p>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<div class="flex items-center mx-5 justify-between">
+  <%=link_to 'Add expense', new_home_page_expense_path, class: "text-white py-3 bg-green-500 rounded-md text-lg px-6 mt-3 cursor-pointer" %>
+  <%= link_to 'Back', home_pages_path, class: 'text-white py-3 bg-green-600 rounded-md text-lg px-10 mt-4 cursor-pointer' %>  
+</div>
+
+<div class="my-4 text-center">
+  <%= render 'shared/sign_in_sign_up' %>
+</div>
+
